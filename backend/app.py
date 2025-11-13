@@ -18,7 +18,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://dashboarprojetos.vercel.app",
+        "https://dashboar-projetos.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
