@@ -16,7 +16,10 @@ app = FastAPI()
 # Configurar CORS para permitir requisições do frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # URL do frontend Vite
+    allow_origins=[
+        "http://localhost:5173",
+        "https://dashboar-projetos.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
